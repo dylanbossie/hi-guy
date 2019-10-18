@@ -36,6 +36,16 @@ application {
     mainClassName = 'com.bobble.higuy.App'
 }
 
+jar {
+	baseName = 'hi-guy'
+	version = '0.1.0'
+	manifest {
+		attributes(
+			'Main-Class': 'com.bobble.higuy.App'
+		)
+	}
+}
+
 test {
     // Use junit platform for unit tests
     useJUnitPlatform()
